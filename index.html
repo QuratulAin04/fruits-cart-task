@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fruits Cart</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="fruits.jpg" type="image/jpg">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Fruits Cart</h1>
+            <input type="number" placeholder="enter budget">
+            <button id="input-butn" onclick="userInput()">Add budget</button>
+            <p id="input-item"></p>
+        </div>
+        <div class="flex-container">
+            <div class="orange-content">
+                <strong> Orange price = RS 12.5</strong>
+                <img src="orange.jpg" alt="orange">
+                <button onclick="addInputOrange()" class="add">+</button>
+                <span id="number1">0</span>
+                <button onclick="SubtractInputOrange()" class="minus">-</button>
+            </div>
+            <div class="cherry-content">
+                <strong class="cherry-strong"> cherry price = RS 15.8</strong>
+                <img src="cherry.jpg" alt="cherry" id="cherry-img">
+                <button onclick="addInputcherry()" class="add">+</button>
+                <span id="number2">0</span>
+                <button onclick="SubtractInputcherry()" class="minus">-</button>
+            </div> 
+        </div>
+        <div class="balance">
+            <p id="total"></p>
+            <p id="balance"></p>
+        </div>
+        <script src="store.js"></script>
+    </body>
+    
+</html>

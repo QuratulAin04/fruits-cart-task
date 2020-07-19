@@ -1,0 +1,81 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Create two rows of equal width */
+.columns {
+  float: left;
+  width: 28.5%;
+  padding: 6px;
+}
+
+/* Style the list */
+.price {
+  list-style-type: none;
+  border: 1px solid rgb(28, 25, 233);
+  margin: 0;
+  padding: 0;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+/* Pricing header */
+.price .header {
+  background-color: rgb(255, 255, 255);
+  color: black;
+  font-size: 24px;
+  font-style: italic;
+}
+
+/* List items */
+.price li {
+  border-bottom: 1px solid #eee;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Grey list item */
+.price .grey {
+  background-color: #eee;
+  font-size: 18px;
+}
+
+/* The "Sign Up" button */
+.button {
+  background-color: #01f5e1;
+  border: none;
+  color: white;
+  padding: 8px 20px;
+  text-align: left;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.add{
+  background-color: transparent;
+  border: 1px solid black;
+  font-weight: bold;
+  padding: 3px;
+}
+
+.minus{
+  background-color: transparent;
+  border: 1px solid black;
+  font-weight: bold;
+  padding: 3px;
+}
+.balance {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-weight: bold;
+}
+
+/* Change the width of the two rows to 100%
+(to stack horizontally on small screens) */
+@media only screen and (max-width: 500px) {
+  .rows {
+    width: 100%;
+  }
+}
